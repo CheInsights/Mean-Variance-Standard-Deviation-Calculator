@@ -1,28 +1,48 @@
-
+Mean-Variance-Standard Deviation Calculator
 Overview
-The Mean-Variance-Standard Deviation Calculator is a Python project designed to perform statistical analysis on a 3×3 matrix of numbers using NumPy. This focused tool takes a flat list of exactly nine numbers, reshapes it into a matrix, and computes essential descriptive statistics — mean, variance, standard deviation, maximum, minimum, and sum — across rows, columns, and the entire flattened dataset. It serves as an excellent demonstration of array manipulation, axis-based operations, and statistical computation in data analysis workflows.
+The Mean-Variance-Standard Deviation Calculator is a Python-based analytical tool designed to perform multi-axis statistical computations on a 3×3 matrix. Using NumPy, the project transforms a flat list of nine numbers into a structured matrix to compute essential descriptive statistics across rows, columns, and the entire dataset.
 
-Features
-1. Input Validation Module
-Data Validation: Ensures the input list contains exactly nine numbers; raises a clear ValueError with the message "List must contain nine numbers." if the requirement is not met.
+This project serves as a demonstration of core data engineering skills: array manipulation, axis-based operations, and robust error handling within a data analysis workflow.
 
-2. Matrix Transformation Module
-NumPy Integration: Converts the input list of nine numbers into a clean 3×3 NumPy array using reshape for efficient multi-dimensional calculations.
+Technical Modules
+🛡️ Input Validation
+Data Integrity: The function verifies that the input list contains exactly nine numbers.
 
-3. Statistical Analysis Module
-Comprehensive Calculations: Computes six key statistics (mean, variance, standard deviation, max, min, sum) along three views:
-- Rows (axis=1)
-- Columns (axis=0)
-- Flattened matrix (overall)
-Returns results in a structured dictionary with plain Python lists and scalar values.
+Exception Handling: Raises a ValueError with the message "List must contain nine numbers." if the requirement is not met, preventing downstream calculation errors.
 
-4. Output Formatting Module
-Dictionary Structure: Organizes results in the precise format required, with row statistics first, followed by column statistics, followed by the flattened value — ensuring compatibility with automated testing suites.
+📐 Matrix Transformation
+NumPy Integration: Leverages the reshape method to convert 1D input lists into 3×3 NumPy arrays.
 
-Why Mean-Variance-Standard Deviation Calculator?
-This project aims to showcase proficiency in NumPy and fundamental data analysis techniques commonly used in scientific computing and statistics. By handling matrix reshaping, axis-specific operations, type conversion, and exception handling, it demonstrates clean, reliable code for numerical analysis tasks encountered in data science, research, and certification assessments.
+Memory Efficiency: Uses NumPy’s optimized C-backend for high-speed multi-dimensional calculations.
 
-Special Note
-The Mean-Variance-Standard Deviation Calculator is not only a functional statistical tool but also a clear illustration of the power of NumPy in simplifying complex array-based computations. The combination of input validation, precise axis handling, and structured output adds a layer of robustness and professionalism to numerical data processing workflows.
+📊 Statistical Analysis
+The tool computes six key metrics across three distinct views:
 
-Feel free to explore the function, test it with different datasets, and adapt the code for your specific analytical needs.
+Axis 0 (Columns): Vertical performance trends.
+
+Axis 1 (Rows): Horizontal performance trends.
+
+Flattened: Global dataset statistics.
+
+Metrics included: Mean, Variance, Standard Deviation, Maximum, Minimum, and Sum.
+
+📋 Output Formatting
+Structure: Results are returned in a strictly formatted dictionary compatible with automated testing suites.
+
+Type Conversion: All results are converted from NumPy types back into native Python lists for maximum compatibility with external APIs.
+
+Real-World Application
+In a commercial data environment—such as Agricultural Fintech—this logic is fundamental for auditing regional performance. For example, if the matrix represents Loan Repayment Rates across three different Regions (Columns) over three Months (Rows), this tool can instantly identify:
+
+Axis 0: Which region is performing best on average.
+
+Axis 1: Which month saw a dip in repayments across all regions.
+
+Flattened: The overall health of the credit portfolio.
+
+Tech Stack
+Language: Python 3.x
+
+Library: NumPy
+
+Environment: Jupyter Notebook 
