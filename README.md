@@ -13,7 +13,8 @@ Data Integrity: The function verifies that the input list contains exactly nine 
 
 Exception Handling: Raises a ValueError with the message "List must contain nine numbers." if the requirement is not met, preventing downstream calculation errors.
 
-#📐 Matrix Transformation
+📐 Matrix Transformation
+
 NumPy Integration: Leverages the reshape method to convert 1D input lists into 3×3 NumPy arrays.
 
 Memory Efficiency: Uses NumPy’s optimized C-backend for high-speed multi-dimensional calculations.
