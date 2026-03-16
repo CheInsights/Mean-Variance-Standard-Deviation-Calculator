@@ -1,4 +1,4 @@
-Mean-Variance-Standard Deviation Calculator
+
 Overview
 The Mean-Variance-Standard Deviation Calculator is a Python project designed to perform statistical analysis on a 3×3 matrix of numbers using NumPy. This focused tool takes a flat list of exactly nine numbers, reshapes it into a matrix, and computes essential descriptive statistics — mean, variance, standard deviation, maximum, minimum, and sum — across rows, columns, and the entire flattened dataset. It serves as an excellent demonstration of array manipulation, axis-based operations, and statistical computation in data analysis workflows.
 
